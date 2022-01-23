@@ -10,7 +10,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <Head>
-        <title>Replit Lightning Payment</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>{process.env['WEBPAGENAME'] || 'Replit Lightning Payment'}</title>
       </Head>
       <Style />
       <Component {...pageProps} />

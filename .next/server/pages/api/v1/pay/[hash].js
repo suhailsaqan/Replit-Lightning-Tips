@@ -63,7 +63,7 @@ async function handler(req, res) {
   }
 
   console.log(`Creating ${value} sat invoice for user ${hash}`);
-  const shaHash = (0,src_util_crypto__WEBPACK_IMPORTED_MODULE_2__/* .getHash */ .XR)((0,utf8__WEBPACK_IMPORTED_MODULE_4__.encode)(src_helpers_env__WEBPACK_IMPORTED_MODULE_3__/* .metadata */ .P), "base64");
+  const shaHash = (0,src_util_crypto__WEBPACK_IMPORTED_MODULE_2__/* .getHash */ .XR)((0,utf8__WEBPACK_IMPORTED_MODULE_4__.encode)(src_helpers_env__WEBPACK_IMPORTED_MODULE_3__/* .lightning_memo */ .k), "base64");
   const [invoice, error] = await (0,src_helpers__WEBPACK_IMPORTED_MODULE_5__/* .toWithError */ .l)(src_api__WEBPACK_IMPORTED_MODULE_0__/* .LndApi.getInvoice */ ._K.getInvoice(value, shaHash));
 
   if (error || !(invoice !== null && invoice !== void 0 && invoice.payment_request)) {

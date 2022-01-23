@@ -1,17 +1,17 @@
-import { Request } from 'express';
+import { Request } from "express";
 
 export const Url = (req: Request, setLocalhost?: string) => {
-  let protocol = 'https:';
+  let protocol = "https:";
   let host = req
-    ? req.headers['x-forwarded-host'] || req.headers['host']
+    ? req.headers["x-forwarded-host"] || req.headers["host"]
     : window.location.host;
-  if (host && host.indexOf('localhost') > -1) {
-    if (setLocalhost) host = 'localhost:3000';
-    protocol = 'http:';
+  if (host && host.indexOf("localhost") > -1) {
+    if (setLocalhost) host = "localhost:3000";
+    protocol = "http:";
   }
   return {
     protocol: protocol,
     host: host,
-    origin: protocol + '//' + host,
+    origin: protocol + "//" + host,
   };
 };

@@ -8,15 +8,15 @@ exports.modules = {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "O": () => (/* binding */ env),
-/* harmony export */   "P": () => (/* binding */ metadata)
+/* harmony export */   "k": () => (/* binding */ lightning_memo)
 /* harmony export */ });
 const env = {
-  max: Number(process.env.MAX) || 100000000,
-  min: Number(process.env.MIN) || 0,
-  metadata: process.env.META || "Replit Lightning Invoice",
-  name: process.env.NAME || "Replit Lightning"
+  max: Number(process.env['MAX']) || 1000000,
+  min: Number(process.env['MIN']) || 0,
+  lightning_memo: process.env.lightning_memo || "Replit Lightning Invoice",
+  name: process.env['NAME'] || "Replit Lightning"
 };
-const metadata = JSON.stringify([["text/plain", env.metadata]]);
+const lightning_memo = JSON.stringify([["text/plain", env.lightning_memo]]);
 
 /***/ }),
 

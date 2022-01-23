@@ -2,7 +2,7 @@ import { getIp } from "src/helpers";
 import { Request, Response } from "express";
 import { getHash } from "src/util/crypto";
 import { middlewares } from "src/helpers/express";
-import { env, metadata } from "src/helpers/env";
+import { env, lightning_memo } from "src/helpers/env";
 import { Url } from "src/helpers/url";
 
 export default async function handler(req: Request, res: Response) {
@@ -17,7 +17,7 @@ export default async function handler(req: Request, res: Response) {
     callback: `${origin}/api/v1/pay/${ipHash}`,
     maxSendable: env.max * 1000,
     minSendable: env.min * 1000,
-    metadata,
+    lightning_memo,
     commentAllowed: 0,
     tag: "payRequest",
   };

@@ -20,8 +20,8 @@ const LndApi = {
       const headers = new Headers();
       headers.set("Accept", "application/json");
       headers.set("Content-Type", "application/json");
-      headers.set("Grpc-Metadata-macaroon", process.env.LND_MACAROON || "");
-      const response = await fetch(`${process.env.LND_URL}/v1/invoices`, {
+      headers.set("Grpc-Metadata-macaroon", process.env['LND_MACAROON'] || "");
+      const response = await fetch(`${process.env['LND_URL']}/v1/invoices`, {
         method: "post",
         headers,
         body: JSON.stringify({

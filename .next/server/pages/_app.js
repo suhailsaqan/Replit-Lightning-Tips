@@ -67,10 +67,13 @@ function App({
 }) {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_react_query_.QueryClientProvider, {
     client: queryClient,
-    children: [/*#__PURE__*/jsx_runtime_.jsx((head_default()), {
-      children: /*#__PURE__*/jsx_runtime_.jsx("title", {
-        children: "Replit Lightning Payment"
-      })
+    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)((head_default()), {
+      children: [/*#__PURE__*/jsx_runtime_.jsx("link", {
+        rel: "shortcut icon",
+        href: "/favicon.ico"
+      }), /*#__PURE__*/jsx_runtime_.jsx("title", {
+        children: process.env['WEBPAGENAME'] || 'Replit Lightning Payment'
+      })]
     }), /*#__PURE__*/jsx_runtime_.jsx(Style, {}), /*#__PURE__*/jsx_runtime_.jsx(Component, _objectSpread({}, pageProps))]
   });
 }

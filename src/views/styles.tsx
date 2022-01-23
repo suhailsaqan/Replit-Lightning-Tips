@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const IndexStyles = {
   wrapper: styled.div`
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ export const IndexStyles = {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     width: 100%;
-    background: #202020;
+    background: rgb(255 149 0);
     color: white;
     padding: 20px;
     text-align: center;
@@ -32,7 +32,7 @@ export const IndexStyles = {
     padding: 24px;
   `,
   info: styled.div`
-    margin: 8px 0 0;
+    width: 100%;
     font-size: 20px;
     color: gray;
     width: 100%;
@@ -55,6 +55,7 @@ export const IndexStyles = {
     font-weight: bolder;
   `,
   copyButton: styled.button`
+    width: 100%;
     border: none;
     background: transparent;
     padding: 0;
