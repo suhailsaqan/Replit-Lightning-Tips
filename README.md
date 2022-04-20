@@ -1,6 +1,4 @@
-# Replit Lightning Tips
-
-![Replit](/images/replit.png)
+# Personal Lightning Tips
 
 #### Deploy a lightning tip service so people can tip you for your work! 
 
@@ -14,7 +12,7 @@ No need to change any code, just enter 2 stuff and your set.
 
 ## Setup
 
-Go to Replit's `secrets` section and add two Environment Variables (the names **must** match the names in the example below):
+You need to set the following Environment Variables:
 
 - LND_URL=`https://yoururl.com:8081` (REST Host URL for your LND Node)
 - LND_MACAROON=`0201036c6e6402...` (HEX macaroon)
@@ -31,7 +29,7 @@ Learn more about setting up an LND node [here](https://github.com/lightningnetwo
 
 ## Video
 
-![Replit](/images/replit.gif)
+![](/images/replit.gif)
 
 ## Live Demo
 
