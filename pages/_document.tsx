@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Replit"
+            content="Personal"
             key="description"
           />
           <link

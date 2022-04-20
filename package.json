@@ -1,5 +1,5 @@
 {
-  "name": "Replit_Lightning_Tip",
+  "name": "Personal_Lightning_Tip",
   "version": "0.1.0",
   "description": "Deploy a lightning tip service so people can tip you for your work!",
   "main": "index.js",

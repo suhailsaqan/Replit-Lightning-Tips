@@ -29,7 +29,7 @@ Learn more about setting up an LND node [here](https://github.com/lightningnetwo
 
 ## Video
 
-![](/images/replit.gif)
+![](/images/demo.gif)
 
 ## Live Demo
 
