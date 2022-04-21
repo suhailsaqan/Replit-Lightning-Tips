@@ -4,7 +4,7 @@
   "description": "Deploy a lightning tip service so people can tip you for your work!",
   "main": "index.js",
   "scripts": {
-    "buildstart": "yarn build && yarn start",
+    "bs": "yarn build && yarn start",
     "dev": "next",
     "build": "next build",
     "start": "next start",

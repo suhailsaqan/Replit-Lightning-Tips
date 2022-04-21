@@ -11,7 +11,8 @@ export const IndexStyles = {
   `,
   square: styled.div`
     width: 350px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    box-shadow: 0px 0px 20px 5px rgb(0 4 255);
     border-radius: 0px;
     background: white;
   `,
@@ -19,14 +20,15 @@ export const IndexStyles = {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     width: 100%;
-    background: rgb(255 149 0);
+    background: rgb(82, 24, 250);
     color: white;
     padding: 20px;
     text-align: center;
   `,
   title: styled.h1`
-    font-size: 30px;
+    font-size: 28px;
     margin: 0;
+    color: white;
   `,
   bottom: styled.div`
     padding: 24px;

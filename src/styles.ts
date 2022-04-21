@@ -9,12 +9,15 @@ export const Style = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        background: gray;
+        background: black;
         color: black;
-        font-family: Georgia, serif;
+        font-family: Ubuntu,sans-serif;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         align-items: center;
     }
+    ::selection {
+        background: black;
+      }
 `;

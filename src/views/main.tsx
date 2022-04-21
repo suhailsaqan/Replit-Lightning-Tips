@@ -17,7 +17,7 @@ const S = {
     font-size: 20px;
   `,
   darkTitle: styled.div`
-    color: grey;
+    color: black;
   `,
   input: styled.input`
     font-size: 20px;
@@ -29,7 +29,7 @@ const S = {
     border-radius: 4px;
     width: 100%;
   `,
-button: styled.button`
+  button: styled.button`
     padding: 0;
     width: 100%;
     height: 38px;
@@ -38,6 +38,8 @@ button: styled.button`
     justify-content: center;
     align-items: center;
     background: #000;
+    font-family: Ubuntu, sans-serif;
+    font-size: 100%;
 
     border: none;
     outline: none;
@@ -50,7 +52,7 @@ button: styled.button`
 
     :before {
       content: "";
-      background: linear-gradient(45deg, #f59542, #f07307, #bf5c06, #8f4200);
+      background: linear-gradient(#7b68ee, #9457eb, #6050dc, #5218fa, #5a4fcf);
       position: absolute;
       top: -2px;
       left: -2px;
@@ -140,11 +142,11 @@ export const Main = ({ max, min }: { max: number; min: number }) => {
     <>
       <S.separation>
         <S.line>
-          <S.darkTitle>Minimum Amount</S.darkTitle>
+          <S.darkTitle>Min.</S.darkTitle>
           <div>{`${min} sats`}</div>
         </S.line>
         <S.line>
-          <S.darkTitle>Maximum Amount</S.darkTitle>
+          <S.darkTitle>Max.</S.darkTitle>
           <div>{`${max} sats`}</div>
         </S.line>
       </S.separation>
