@@ -171,7 +171,7 @@ export const Main = ({ max, min }: { max: number; min: number }) => {
         disabled={mutation.isLoading}
         onClick={() => mutation.mutate({ amount })}
       >
-        Create an Invoice
+        Create Invoice
       </S.button>
     </>
   );
